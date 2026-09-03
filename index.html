@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Week 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <p class="eyebrow">PROSPER</p>
+            <h1>Welcome, Everyone!</h1>
+            <p class="intro">Enter your details click submit and greet me watch the magic happen!</p>
+
+            <form id="greeting-form">
+                <label for="name">Your name</label>
+                <input id="name" type="text" placeholder="e.g. Prosper" required>
+
+                <label for="age">Your age</label>
+                <input id="age" type="number" min="1" placeholder="e.g. 21" required>
+
+                <button type="submit">Submit</button>
+            </form>
+            <button id="greetme">Greet Me</button>
+
+            <div id="output" class="output" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <script src="prosper.js" defer></script>
+</body>
+</html>
