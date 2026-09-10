@@ -33,3 +33,18 @@ document.getElementById('greetme').addEventListener('click', () => {
 
 	displayGreeting(name, age);
 });
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(Response=> Response.json())
+.then(data=> console.log(data))
+.catch(error=> console.log ('Error:',error));
+async function getUsers() {
+try {
+	const res=await 
+	fetch('https://jsonplaceholder.typicode.com/users')
+const data = await res.json();
+console.log(data);
+} catch (error) {
+console.log('Error', error);
+}
+}
+getUsers()
